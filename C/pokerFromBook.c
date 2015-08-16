@@ -1,3 +1,6 @@
+//This is from a book on C and not my own work. It is incomplete as of 
+//Saturday August 15th
+
 #include <stdio.h>
 #include <time.h>
 #include <ctype.h>
