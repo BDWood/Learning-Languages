@@ -1,0 +1,88 @@
+#Dynamic Dropdown boxes && Foreach Loops
+
+```php
+create a loop using 
+<?php$variables = [1,2,3,4,5]
+echo '<select>'
+
+foreach($variables as $variable) {
+    echo '<option>' . $variable . '</option>';
+}
+echo '</select>'
+?>
+```
+
+
+Creates a dropdown box that is VERY easy to add variables to. Just add the 
+variables to the array and it adds it to the dropdown box.
+
+You can add two variables like so.
+
+
+```php
+<?php 
+
+$animals = ['camel', 'pig', 'skunk', 'lemur', 'cat'];
+
+$options = '';
+foreach($animals as $index => $animal) {
+    $options .= "<option value=\"$index\">$animal</option>";
+}
+?>
+```
+
+Note that you need to drop it into an HTML doc. Like so...
+
+```html
+<html>
+    <body>
+        <select>
+            <?php echo $options; ?>
+        </select>
+    </body>
+</html>
+```
+
+You can do the same things with Associative arrays, but more often than not, 
+need the keys for the variables to show, or you have a bit too little 
+information. Use something like, ```<?php echo "$key:$option"; ?>``` to see both
+the keys AND the information in the Array. 
+
+Iteration=one pass through a loop.
+
+#While Loops
+
+Can cause an infinite loop and fudge up your computer.
+
+
+#For Loops
+
+Are like While Loops but formatted differently.
+
+#Break and Continue
+
+break; will cause the loop to terminate. Normally under a certain condition 
+written in with an IF statement. Used to find a specific thing. 
+
+```php
+//IE: looking for grape in an array of fruit. 
+
+if($fruit == 'grape'){
+    break; 
+}
+will terminate the loop right at break
+```
+
+continue; stops current iteration and then continues the loop until it stops
+based on the original commands. 
+
+```php
+
+//IE: looking for grape, but also want to continue the looping
+
+if($fruit == 'grape') {
+    echo 'grape was found';
+    continue;
+}
+```
+

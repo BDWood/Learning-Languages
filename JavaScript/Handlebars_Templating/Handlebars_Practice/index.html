@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <h1>Hotdogs</h1>
+    <table>
+        
+        <tr>
+            <th>Meat</th>
+            <th>Bun</th>
+            <th>Ketchup</th>
+        </tr>
+        <tr>
+            <td>White Hot</td>
+            <td>Kaiser Roll</td>
+            <td>heck yeah</td>
+        </tr>
+        
+
+        <script id="dogrow" type="text/x-handlebars-template">
+
+            <tr>
+                {{{ meat }}}
+                {{{ bun }}}
+                {{{ ketchup }}}
+            </tr>
+
+        </script>
+
+        <script id="dogtd" type="text/x-handlebars-template">
+            <td>
+                {{ data }}
+            </td>
+        </script>
+
+    </table>
+
+    <div>
+        
+        <h2>Add a Dog</h2>
+        <form action="">
+            <div>
+                Meat: <select name="meat-type">
+                    <option value="">White Hot</option>
+                    <option value="">Brat</option>
+                    <option value="">Buffalo</option>
+                    <option value="">Turkey</option>
+                    <option value="">All Beef</option>
+                </select>
+            </div>
+            <div>
+                Bun: <select name="bun">
+                    <option value="">Kaiser Roll</option>
+                    <option value="">Sesame Seed</option>
+                    <option value="">Potato Roll</option>
+                    <option value="">Paleo</option>
+                </select>
+            </div>
+            <div>
+                Ketchup: <input type="checkbox" name="ketchup">
+            </div>
+            <button>Add Dog</button>
+        </form>
+    
+    </div>
+
+       <!--  <script id="dog-row" type="text/x-handlebars-template">
+
+            <tr>
+                <td>{{ meat }}</td>
+                <td>{{ bun }}</td>
+                <td>{{ ketchup }}</td>
+            </tr>
+
+        </script> -->
+</body>
+</html>

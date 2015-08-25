@@ -1,0 +1,7 @@
+div:nth-child(1) { background: red; }
+div:nth-child(2) { background: green; }
+div:nth-child(3) { background: blue; }
+
+div {
+    padding: 10px;
+}

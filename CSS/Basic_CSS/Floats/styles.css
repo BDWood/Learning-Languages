@@ -1,0 +1,33 @@
+.red {
+    background-color: red;
+    padding: 10px;
+    overflow: hidden;   /* Clearfix with Overflow */
+}
+
+/*
+* Clearfix with pseudo element
+*/
+/*.red::after {
+    clear: both;
+    display: block;
+    content: '';
+}*/
+
+.blue {
+    background-color: blue;
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+.yellow {
+    background-color: yellow;
+    margin-left: 110px;
+}
+
+
+.green {
+    background-color: green;
+    clear: both;
+    margin-top: 10px;
+}

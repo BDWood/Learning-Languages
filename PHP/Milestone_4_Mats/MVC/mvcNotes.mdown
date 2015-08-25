@@ -1,0 +1,37 @@
+#Notes on MVC/Laravel
+
+Every page is a method of a controller.
+
+POS system has customers, who can create invoices, and "buy" items.
+
+Routers talk to controllers, Controllers talks to the views, and the models.
+
+##Router
+
+Listens for a path and sends people to a controller.
+
+##Controllers
+
+If there is a table in the database and you need a CRUD, you need a controller to manage those things. Controllers return views(pages that the user sees). To create a view you need, "filename.blade.php". 
+
+Steps to make a page
+
+1. need a way to get there (a, button, etc.)
+2. Route it in the router page using "Route::get('PATH', 'controller@page');"
+3. Make a method in the controller ie: public function page() {}
+4. Return a view. public function page() {return view('settings');}
+
+##Models
+
+To model data from the database, create a class that extends model and an object with the same name as the table name. Then you can call the table name and key inside of the new class. 
+
+The purpose of a model is to model the data. Less complicated uses of those models are less likely to use actual SQL statements. More complex equates to more SQL
+
+You can pass model info into the view, to get them to work together better.
+
+##DB
+
+Database need to knows:
+where the database is
+The database name
+Username and password to get into the database

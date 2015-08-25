@@ -1,0 +1,44 @@
+
+
+#Box Model Notes
+
+Collapsing Margins: two sibiling elements can have top and bottom collapsing
+margins. HOWEVER no such thing as left and right collapsing margins.
+Adjacent Sibiling Collapsing Margins.
+
+Box Model Definition: a set of rules that describes how the content of an 
+element, it's padding, border, and margin are layers and how those layers
+interact with another element's box models.
+
+```
+margin: 5px 10px;
+
+/*
+first is top and bottom
+second is left and right
+*/
+
+```
+
+```
+margin: 5px 10px 7px 12px;
+/*
+first is top
+second is right
+third is left
+fourth is bottom
+*/
+
+```
+
+Parent Child Collapsing Margins: First Child will give it's Top margin to 
+it's container, and the last child will give its bottom margin to it's 
+container.
+
+Overcoming Parent Child Collapsing Margins: 
+Go to parent (container), then add padding. Keep in mind that it adds to the
+box model
+You can also add a border, then it drops the collapse.
+Use 'Overflow: hidden;' or 'overflow: auto;'. This doesn't cause anything
+to happen to the box model. (Overflow: auto; has the potential of creating
+    a scroll bar in the middle of the page.)

@@ -1,0 +1,21 @@
+.red {
+    background-color: red;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.blue {
+    background-color: blue;
+    float: left;
+    width: 100px;
+    min-height: 100px;
+}
+
+.yellow {
+    background-color: yellow;
+    margin-left: 105px;
+}
+
+/*
+*Done using Overflow fix.
+*/

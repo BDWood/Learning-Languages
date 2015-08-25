@@ -1,0 +1,34 @@
+.container {
+    width: 400px;
+    height: 300px; 
+    background-color: yellow;
+    position: relative;
+    /*
+    Position: relative; makes child element position within it's borders
+    */
+}
+
+.container div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    /*
+    fixes the element to the viewport. however, it can ONLY be put on the 
+    viewport end of story. It ignores all of it's parents positions, even 
+    position: relative;.
+    */
+
+
+    /*position: absolute;*/
+    /*
+    Position: absolute; tells the element to position itself, absolutely, to
+    the first NON-static-ly positioned element on the page, normally the view
+    port unless Position: relative;.
+
+    position: absolute; has NO clear fixes, has the same basic problems as float
+    in a media element situation without text wrapping.   
+    */
+    top: 0;
+    left: 0;
+}

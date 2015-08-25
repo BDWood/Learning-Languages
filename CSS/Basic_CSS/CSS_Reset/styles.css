@@ -1,0 +1,16 @@
+* {
+    color: red;
+    font-size: 30pt;
+    font-family: Arial;
+}
+
+
+
+div.top {
+    border-radius: 10px;
+}
+
+div {
+    padding: 15px;
+    background-color: rgba(50, 10, 15, 0.3);
+}

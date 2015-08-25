@@ -1,0 +1,25 @@
+.hero {
+    width: 960px;
+    height: 400px;
+    background: radial-gradient(rgba(3, 142, 168, 0.32), #038EA8), url('batman2.png');
+    background-size: cover;
+
+}
+
+.breakouts {
+    width: 960px;
+    background-color: green;
+    text-align: center;
+}
+
+.breakouts .breakout {
+    background-color: lime;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    transform: translateY(-20px);
+}
+
+.breakouts > *+* {
+    margin-left: 10px;
+}

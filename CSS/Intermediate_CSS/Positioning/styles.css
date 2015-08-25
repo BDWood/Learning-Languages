@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+.blue, .green {
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.orange {
+    background-color: orange;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding: 50px;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 50px;
+}
+
+.orange2, .red2 {
+    left: 0;
+    right: 0;
+    height: 50px;
+    position: absolute;
+}
+
+.orange2 {
+    background-color: orange;
+    top: 0;
+}
+
+.red2 {
+    background-color: red;
+    bottom: 0;
+}
+
+.green {
+    background-color: green;
+}
+
+.white, .gray {
+    padding: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.white {
+    background-color: white;
+    top: 0;
+}
+
+.gray {
+    background-color: gray;
+    bottom: 0;
+}
+
+.white2, .gray2 {
+    height: 350px;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+}
+
+.white2 {
+    background-color: white;
+    left: 0;
+}
+
+.gray2 {
+    background-color: gray;
+    right: 0;
+}

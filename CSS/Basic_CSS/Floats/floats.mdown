@@ -1,0 +1,34 @@
+#Floats
+
+As wide as content
+Subsequent children wrap around
+Containers only going to have the dimension of NON_FLOATING children.
+
+
+To correct the problems use Sudo Elements. Use only CSS.
+
+```
+selector::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+```
+
+The fix NEEDS all three of these elements.
+OR
+
+```
+selector {
+    overflow: hidden;
+}
+```
+
+Fixes it. HOWEVER if you want to have things overhanging the parent element, use
+the previous fix.
+
+#Brad's Recipe
+
+Media Objects have EXACTLY two children. One to be the float, the other to be 
+the content. Give the float Width and Height. Give the container a clear fix. 
+Then give the Content margin left >= the floating element. 

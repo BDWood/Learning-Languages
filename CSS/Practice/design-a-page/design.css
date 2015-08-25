@@ -1,0 +1,91 @@
+.main-container {
+    background-color: red;
+}
+
+header {
+    background-color: #c48;
+}
+
+header nav {
+    background-color: #f16;
+}
+
+header a {
+    background-color: green;
+}
+
+header nav a:first-child {
+    background-color: purple;
+}
+
+header nav a:last-child {
+    background-color: gray;
+}
+
+header nav a:nth-child(2) {
+    background-color: yellow;
+}
+
+main {
+    background-color: #945;
+}
+
+aside {
+    background-color: blue;
+}
+
+aside nav {
+    background-color: black;
+}
+
+aside nav a:first-child {
+    background-color: orange;
+} 
+
+aside nav a:nth-child(2) {
+    background-color: #373;
+}
+
+aside nav a:last-child {
+    background-color: #6ff;
+}
+
+article {
+    background-color: #aaa;
+}
+
+article h1 {
+    background-color: #469;
+}
+
+article p {
+    background-color: #396;
+}
+
+article a {
+    background-color: #49f;
+}
+
+.special {
+    background-color: #c33;
+}
+
+.special h1 {
+    background-color: #d99;
+}
+
+.special p {
+    background-color: #a49;
+}
+
+.special a {
+    background-color: #f99;
+}
+
+footer {
+    background-color: #f57;
+}
+
+footer p {
+    background-color: #b43;
+}

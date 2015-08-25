@@ -1,0 +1,50 @@
+.container {
+    background-color: red;
+    padding: 10px;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.float {
+    background-color: blue;
+    float: left;
+    min-height: 100px;
+    width: 100px;
+}
+
+.content {
+    background-color: yellow;
+    margin-left: 110px;
+    padding: 5px;
+}
+
+.Icontainer {
+    background-color: black;
+    padding: 5px;
+}
+
+.Icontainer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.content > * + * {
+    margin-top: 5px;
+}
+
+.Ifloat {
+    float: left;
+    min-height: 50px;
+    width: 50px;
+    background-color: green;
+}
+
+.Icontent {
+    background-color: orange;
+    margin-left: 55px;
+}
