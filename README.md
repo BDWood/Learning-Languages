@@ -1,2 +1,2 @@
 # Learning-Languages
-My quest to learn as many programming languages as possible
+My quest to learn as many languages as possible
